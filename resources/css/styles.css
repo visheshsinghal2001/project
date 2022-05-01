@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1a1a1d;
+  font-family: "lato", "arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.row {
+  max-width: 1548px;
+  margin: 0 auto;
+}
+.row2 {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.row23 {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  font-size: 400%;
+  font-weight: 300;
+  text-transform: uppercase;
+  word-spacing: 6px;
+  letter-spacing: 4px;
+
+  margin-bottom: 35px;
+  /* transform: translate(-15%); */
+}
+h2 {
+  margin: 0;
+  font-size: 200%;
+  font-weight: 300;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  /* transform: translate(-10%); */
+}
+.btn:link,
+.btn:visited {
+  margin-top: 10px;
+  font-family: "lato";
+  font-weight: 300px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 250px;
+  color: white;
+  background-color: rgb(195, 7, 63);
+  padding: 10px 40px;
+
+  transition: background-color 0.5s;
+}
+.btn-click:hover,
+.btn-click:active {
+  background-color: #950740;
+  transition: 0.5s;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+  /* transform: translate(0, -5%); */
+  font-size: 100%;
+}
+.main-nav li {
+  display: inline-block;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  transition: border-bottom 0.5s;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 6px;
+}
+.logo {
+  width: 150px;
+  margin: 3px;
+  float: left;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid #c3073f;
+}
+/* --------------------------------- */
+/* -------------user  Box--------------- */
+/* --------------------------------- */
+
+.user:link,
+.user:visited,
+.user:hover,
+.user:active {
+  color: white;
+  text-decoration: none;
+}
+.user:hover .user:active {
+  border-bottom: 2px solid #950740;
+}
+.iconic {
+  float: left;
+  margin-right: 10px;
+}
+.member {
+  background-color: rgba(24, 24, 24, 0.589);
+  position: relative;
+  width: 370px;
+  z-index: 15;
+  transform: translate(300%, 5%);
+  padding: 25px;
+  overflow: hidden;
+  font-size: 80%;
+}
+.member div {
+  margin: 15px;
+}
+/* -------------------------------- */
+/* -----------LOGIN BOX PROPERTIES------------ */
+/* -------------------------------- */
+
+.modal {
+  color: white;
+  z-index: 15;
+  background-color: rgba(24, 24, 24, 0.589);
+  position: relative;
+  width: 370px;
+  height: 400px;
+  transform: translate(200%, 25%);
+  padding: 15px;
+  overflow: hidden;
+  font-size: 80%;
+  transition: 0.3s;
+  opacity: 0;
+}
+.modal.animate__fadeInDown {
+  opacity: 1;
+  color: white;
+  z-index: 15;
+  background-color: rgba(24, 24, 24, 0.589);
+  position: relative;
+  width: 370px;
+  left: 40%;
+  top: 80%;
+  height: 400px;
+  /* transform: translate(500%, 25%); */
+  padding: 15px;
+  overflow: hidden;
+  font-size: 80%;
+  transition: 0.3s;
+}
+.toggle-effect {
+  top: 10;
+  left: 29;
+  position: absolute;
+  width: 44%;
+  height: 13%;
+  background: #ff004c8c;
+  border-radius: 30px;
+
+  transition: 0.2s;
+}
+
+.top-toggle {
+  size: 140%;
+  border-radius: 30px;
+  background-color: rgb(39, 39, 39);
+}
+.switch {
+  border-radius: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  padding: 15px;
+  background-color: rgb(39, 39, 39);
+  border: 0;
+  width: 48%;
+  margin: 0;
+  text-align: center;
+}
+input {
+  color: white;
+  margin: 5px;
+  border-bottom: 2px solid #c3073f;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+  width: 90%;
+  height: 35px;
+}
+.Login {
+  outline: none;
+  position: absolute;
+  width: 350px;
+  padding: 15px;
+  transition: 0.2s;
+  border: none;
+  background-color: transparent;
+  top: 20%;
+}
+select {
+  background-color: black;
+  width: 90%;
+  margin: 10px 0 10px 0;
+}
+
+.signup {
+  outline: none;
+  border: none;
+  position: absolute;
+  left: 450px;
+  top: 20%;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+.butt {
+  background: #c3073f;
+  margin: 10px 65px;
+  font-family: "lato";
+  font-weight: 300px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 250px;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+.hidden {
+  display: none;
+}
+.modal a {
+  position: absolute;
+  top: 90%;
+  left: 12%;
+}
+/* ------------------------------ */
+/* --TILES PROPERTIES-UNUSABLE FOR REST SITE---- */
+/* ------------------------------ */
+figure {
+  margin: 0;
+  padding: 10px;
+  /* background-color: #131314; */
+  /* border: 3px solid #950740; */
+}
+figure img {
+  position: relative;
+  top: 50%;
+  height: 355px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+
+  align-items: center;
+}
+.row2 a {
+  text-decoration: none;
+}
+figcaption {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.title {
+  border-bottom: 2px solid gray;
+}
+.underline {
+  margin-bottom: 3px;
+  border-bottom: 2px solid #c3073f;
+}
+.spanik {
+  display: block;
+  width: 33%;
+  float: left;
+  text-decoration: none;
+  /* margin: 0; */
+}
+.spanik:hover,
+.spanik:active {
+  transform: scale(105%);
+}
+.body {
+  background-color: rgba(43, 43, 43, 0.863);
+}
+/* ---------------------------- */
+/* -------Un usable code-------- */
+/* ---------------------------- */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/back-header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.head-overlay {
+  position: absolute;
+  /* width: 1140px; */
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.foot {
+  position: absolute;
+  background-color: black;
+  height: 200px;
+  padding: 15px;
+  color: silver;
+  width: 15400px;
+
+  transform: translate(0, 400%);
+}

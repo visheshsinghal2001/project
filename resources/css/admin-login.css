@@ -1,0 +1,47 @@
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.801)),
+    url("img/admin-login.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "lato", "arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  color: whitesmoke;
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.699);
+  width: 25%;
+  padding: 15px;
+  height: 400px;
+}
+h2 {
+  margin: 10px 40% 30px 40%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+  margin: 10px;
+  border-bottom: 2px solid #c3073f;
+}
+.butt {
+  background: #c3073f;
+  margin: 30px 35%;
+  font-family: "lato";
+  font-weight: 300px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 250px;
+  color: white;
+  padding: 5px 30px;
+  border: none;
+}

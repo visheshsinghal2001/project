@@ -1,0 +1,142 @@
+html {
+  background-color: #1a1a1d;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "lato", "arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  color: whitesmoke;
+}
+
+h4 {
+  padding: 10px;
+  font-size: 300%;
+}
+.seat {
+  cursor: pointer;
+  user-select: none;
+  height: 42px;
+  width: 40px;
+  margin: 3px;
+  font-size: 95%;
+  font-weight: 400;
+  padding-top: 7px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 1250px;
+  margin: 15px auto;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+.container {
+  display: flex;
+}
+.normie {
+  background-color: #444451;
+}
+.silver {
+  background-color: silver;
+  color: black;
+}
+.gold {
+  background-color: goldenrod;
+  color: black;
+}
+.platinum {
+  background-color: #c3073f;
+}
+
+.select {
+  background-color: rgb(123, 247, 0);
+  color: white;
+  transform: scale(105%);
+}
+.seat:not(.sold):hover {
+  background-color: rgb(0, 231, 247);
+  color: white;
+  transform: scale(110%);
+}
+.sold {
+  background-color: blue;
+  color: white;
+  transform: scale(95%);
+}
+.s2 {
+  /* background-color: rgba(28, 148, 148, 0.247); */
+  border: 1px solid #c3073f;
+  height: 65px;
+}
+.seat-count {
+  list-style: none;
+  position: absolute;
+}
+.seat-count li {
+  background-color: transparent;
+  width: 150px;
+  z-index: 1;
+  display: inline-block;
+  /* margin-right: 45px; */
+}
+.count {
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 6px 3px 0 0;
+}
+.submit-btn {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.message-box {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.589);
+  width: 700px;
+  font-size: 300%;
+  text-align: center;
+  padding: 100px;
+}
+.date-time {
+  margin: 5px;
+  border-bottom: 2px solid #c3073f;
+  color: white;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+  width: 300px;
+  height: 35px;
+}
+main::select {
+  margin: 5px;
+  border-bottom: 2px solid #c3073f;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+  /* background-color: black; */
+  /* color: white; */
+
+  width: 300px;
+  height: 35px;
+}
